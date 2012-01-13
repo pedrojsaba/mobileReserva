@@ -1,7 +1,9 @@
 MobileReserva::Application.routes.draw do
-  resources :flights
+  
 
-root :to => 'flights#index'
+  root :to => 'flights#index'
+  
+  resources :flights
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Código:</b>
+  <%= @flight.codigo %>
+</p>
+
+<p>
+  <b>Aerolínea:</b>
+  <%= @flight.aerolinea %>
+</p>
+
+<p>
+  <b>Salida:</b>
+  <%= @flight.salida %>
+</p>
+
+<p>
+  <b>Llegada:</b>
+  <%= @flight.llegada %>
+</p>
+
+<p>
+  <b>Ciudad:</b>
+  <%= @flight.ciudad %>
+</p>
+
+<p>
+  <b>Estado:</b>
+  <%= @flight.estado %>
+</p>
+
+
+<%= link_to 'Editar', edit_flight_path(@flight) %> |
+<%= link_to 'Atrás', flights_path %>

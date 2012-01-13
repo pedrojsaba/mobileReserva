@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MobileReserva</title>
+  <title>Reserva de Vuelos</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+  <link rel="stylesheet"  href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<link rel="stylesheet" href="http://jquerymobile.com/demos/1.0/docs/_assets/css/jqm-docs.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.js"></script>
+	<script src="http://jquerymobile.com/demos/1.0/experiments/themeswitcher/jquery.mobile.themeswitcher.js"></script>
+	<script src="http://jquerymobile.com/demos/1.0/docs/_assets/js/jqm-docs.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
 </head>
 <body>
-
-<%= yield %>
-
+	<div data-role="page" class="type-home">
+		<div data-role="content">
+			<%= yield %>
+		</div>
+	
+	
+		<div data-role="footer" class="footer-docs" data-theme="c">
+				<p>&copy; DSD 2012-0 M1 QWERTY</p>
+		</div>	
+	</div>
 </body>
 </html>

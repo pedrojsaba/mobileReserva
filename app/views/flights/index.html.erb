@@ -1,0 +1,25 @@
+<div class="content-secondary">
+    
+    <div id="jqm-homeheader">
+        <h1 id="jqm-logo"><img src="http://jquerymobile.com/demos/1.0/docs/_assets/images/jquery-logo.png" alt="jQuery Mobile Framework" /></h1>
+        <p>Sistema de Reserva de Vuelos Online</p>
+    </div>
+    
+    <p class="intro"><strong>Bienvenido.</strong> Busque y realice la reserva de su vuelo.</p>
+
+    <%= link_to 'Nuevo Vuelo', new_flight_path %>
+    <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="f">
+        <li data-role="list-divider">Vuelos</li>
+        <% @flights.each do |flight| %>
+            <li>
+                <a><%= flight.codigo %> (<%= flight.ciudad %>)
+                <%= link_to 'Ver Detalle', flight %>
+                </a>
+            </li>
+            
+        <% end %>
+    </ul>
+</div>
+
+
+
